@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Formulaire</title>
+</head>
+<body>
+    <h1><span>Soli</span><span id="code">code</span> Tanger</h1>    <div id="img">
+        <div id="image2">
+            <img src="img/solicode-gal14_0.jpg" alt="image">
+            <img src="img/solicode-gal3_0 (1).jpg" alt="image"> 
+        </div>
+        <div id="image1">
+            <img src="img/AF1QipMAPH8BP_nNjL_P_wlxv3lPEVHtiAGdFFf_PIxYw1600-h1000-k-no.jpeg" alt="image">
+            <img src="img/AF1QipMUpAyKtSngu_Juucmt9iQPIYL3bVaqS4tnXB6Zw1600-h1000-k-no.jpeg" alt="image">
+        </div>
+    </div>
+    
+    <section>
+        <form id="form1">
+            <div>
+                <input type="text" placeholder="Nom" id="nom" onkeyup="valide()">
+                <P id="name"></P>
+                <input type="text" placeholder="Prénom" id="prenom" onkeyup="validation()"><br><br>
+                <p id="pré"></p>
+            </div>
+            <div>
+                <input type="text" placeholder="nom.prenom@ofppt.ma" id="email" onkeyup="validate()">
+                <p id="email1"></p>
+                <input type="text" placeholder="telephone" id="tele" onkeyup=" Jevalide() ">
+                <p id="telephone1"></p>
+            </div>
+        </form>
+        <div>
+            <h2 id="H2">Genre</h2>
+            <form id="form2">
+                <label for="Féminin"><input type="radio" name="a" value="Féminin" id="Féminin">Féminin</label>
+                <label for="Masculin"><input type="radio" name="a" value="Masculin" id="Masculin">Masculin</label>
+                <p id="para"></p>
+            </form>
+            <h2 id="H2">Groupe</h2>
+            <form id="form3">
+                <label for="DW101"><input type="radio" name="b" value="DW101" id="DW101">DW101</label>
+                <label for="DW102"><input type="radio" name="b" value="DW102" id="DW102">DW102</label>
+                <label for="DW103"><input type="radio" name="b" value="DW103" id="DW103">DW103</label>
+                <label for="DM101"><input type="radio" name="b" value="DM101" id="DM101">DM101</label>
+                <label for="DM102"><input type="radio" name="b" value="DM102" id="DM102">DM102</label>
+                <p id="para2"></p>
+            </form>
+        </div>
+            <h2 id="H2">Les clubs de Solicode Tanger</h2>
+            <form id="form4">
+            <select name="cars" id="cars" multiple>
+                <option value="Informatique">Informatique</option>
+                <option value="Robotique">Robotique</option>
+                <option value="Jeu d'echecs">Jeu d'echecs</option>
+                <option value="Musique">Musique</option>
+                <option value="Foot">Foot</option>
+                <option value="Théatre">Théatre</option>
+            </select>
+            <p id="para3"></p>
+            <input type="button" value="submit" id="button" onclick="inscription()">
+        </form>
+    </section>
+    <h2 id="final"></h2>
+    <script src="java.js"></script>
+    <footer id="footer">
+        <h2>Club Solicode Tanger</h2>
+        <p>copyright© 2022.Club Solicode Tanger</p>
+        <ul>
+            <li><a href="#">Contactez-Nous</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
